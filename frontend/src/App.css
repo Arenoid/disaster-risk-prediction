@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #DAF0EE;
+  color: #3B413C
+}
+
+.App{
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header{
+  display: flex;;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  background: #3B413C;
+  border-bottom: 1px solid #9DB5B2;
+}
+
+.header-left h1{
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #FFFF;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  color: #9DB5B2;
+  margin-top: 2px;
+  display: block;
+}
+
+.toggle-group{
+  display:flex;
+  gap:6px;
+  background: #2e3530;
+  padding:4px;
+  border-radius:8px;
+}
+
+.toggle-btn{
+  padding:6px 16px;
+  border:none;
+  background: transparent;
+  font-size:1rem;
+  font-weight: 500;
+  cursor:pointer;
+  color:#9DB5B2;
+}
+
+.toggle-btn.active{
+  box-shadow: 0 1px 3px;
+  background: #94d1be;
+  color: #3B413C;
+  border-radius: 12px;
+}
+
+.main{
+  display: flex;
+  flex:1;
+  overflow:hidden;
+}
+
+.map-wrap{
+  flex:1;
+  position: relative;
+}
+
+.map{
+  height:100%;
+  width: 100%;
+}
+
+.legend{
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background: #FFFF;
+  padding: 12px 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legend-dot{
+  width: 12px;
+  height:12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+.sidebar{
+  width: 280px;
+  background: #FFFF;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.sidebar h2{
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #38413C;
+}
+
+.pcode{
+  font-size: 0.75rem;
+  color: #9DB5B2;
+  margin-bottom: 20px
+}
+
+.risk-cards{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom:10px;
+}
+
+.risk-card{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background:#DAF0EE;
+}
+
+.risk-label{
+  font-size: 0.8rem;
+  color:#3B413C;
+  font-weight: 500;
+}
+
+.risk-value{
+  font-size: 0.85rem;
+  font-weight:700;
+}
+
+.stats{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  padding-bottom: 12px;
+}
+
+.stat-label{
+  font-size: 0.78rem;
+  color: #9DB5B2;
+}
+
+.stat-value{
+  font-size: 0.82rem;
+  font-weight: 700px;
+  color: #3B413C;
+}
+
+.placeholder{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #9DB5B2;
+  font-size: 0.85rem;
+}
