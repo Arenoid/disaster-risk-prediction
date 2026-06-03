@@ -20,7 +20,7 @@ export default function App(){
   const [riskType, setRiskType] = useState('flood')
 
   useEffect(() =>{
-    fetch("http://localhost:8000/api/districts")
+    fetch("https://disaster-risk-prediction-4s7v.onrender.com/districts")
       .then(r => r.json())
       .then(setDistricts)
     
