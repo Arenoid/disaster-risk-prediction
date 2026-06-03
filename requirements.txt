@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pandas
+geopandas
+xgboost
+scikit-learn
+shapely
+numpy
