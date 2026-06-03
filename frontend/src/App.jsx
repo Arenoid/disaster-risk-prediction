@@ -22,7 +22,7 @@ export default function App(){
 
 
   useEffect(() =>{
-    fetch("https://disaster-risk-prediction-4s7v.onrender.com/districts")
+    fetch("https://disaster-risk-prediction-4s7v.onrender.com/api/districts")
       .then(r => r.json())
       .then(data => {
         setDistricts(data)
