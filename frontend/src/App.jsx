@@ -18,12 +18,16 @@ export default function App(){
   const [geojson, setGeojson] = useState(null)
   const [selected, setSelected] = useState(null)
   const [riskType, setRiskType] = useState('flood')
+  const [loading, setLoading] = useState(true)
+
 
   useEffect(() =>{
     fetch("https://disaster-risk-prediction-4s7v.onrender.com/districts")
       .then(r => r.json())
-      .then(setDistricts)
-    
+      .then(data => {
+        setDistricts(data)
+        setLoading(false)
+      })
   }, [])
 
   useEffect(()=>{
@@ -68,6 +72,8 @@ export default function App(){
       mouseout: (e) =>e.target.setStyle({fillOpacity:0.75, weight:1}),
     })
   }
+
+  if(loading) return <div className="loading">Loading...</div>
 
   return(
     <div className= "App">
