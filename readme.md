@@ -8,8 +8,13 @@
 ![Front Screen](image.png)
 ![Stats](image-1.png)
 
+## Caution
+This model is not entirely accurate, due to the small 77 sample datasent and labels are derived from the same data.
 
 ## Demo
+
+https://disaster-risk-prediction.vercel.app/
+
 
 ## Workings
 1. The data is extracted from [bipadportal.gov.np](https://bipadportal.gov.np/) and [usgs.gov.np](https://usgs.gov.np)
